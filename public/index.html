@@ -44,5 +44,52 @@
       To begin the development, run `npm start` or `yarn start`.
       To create a production bundle, use `npm run build` or `yarn build`.
     -->
+    <script>
+      // let [a,b] = [1,2,3];
+      // const {a:p,b} = {b:1,a:2}
+      // console.log(p)
+      // function add([x=6, y=0]){
+      //   return x + y;
+      // }
+      //
+      // console.log(add([])); // 6
+      // console.log(Array.from([1, 2, 3], () => 1));
+     // Array.from({0:8,length:1},(item)=>{console.log(item)});
+     //  const a = undefined
+     //  setTimeout(()=>{console.log(this)})
+     //  [1,2,3,4].find(()=>{console.log(this)})
+     //  const obj = {methods:'2'}
+     //  const arry = [1,2,3];
+     //  console.log(['1', '2', '3'].findIndex(function (item) {
+     //    return item === this.methods
+     //  }, obj));
+     //  console.log(isNaN(NaN))
+     //  console.log(new Array(30).fill([])[0].push('jack'));
+     //  const ab = new Array(30).fill([]);
+     //  ab[0].push('jack')
+     //  console.log(ab)
+     //
+     //
+     //  const arry = [1,2,3,4,5,6,7,8]
+     //  arry.fill(9,3,7)
+     //  console.log(arry)
+
+
+      // for(let index of ['a','b','c']){
+      //   console.log(index);
+      // }
+      // const arry = [1,,2,[3,[4],5,[6,[7,[8]]]]];
+      // console.log(arry.toString())
+      // console.log(arry.flat(Infinity));
+      // const obj = {
+      //   a:1
+      // }
+      // obj['a'+'b'] =2
+      // console.log(obj)
+      const ab = {a:1,b:2}
+      const cd = {c:3,d:4}
+      console.log({...ab,...cd})
+      console.log(...cd)
+    </script>
   </body>
 </html>

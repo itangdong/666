@@ -30,6 +30,7 @@
       Learn how to configure a non-root public URL by running `npm run build`.
     -->
     <title>React App</title>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
   </head>
   <body>
     <noscript>You need to enable JavaScript to run this app.</noscript>
@@ -86,10 +87,44 @@
       // }
       // obj['a'+'b'] =2
       // console.log(obj)
-      const ab = {a:1,b:2}
-      const cd = {c:3,d:4}
-      console.log({...ab,...cd})
-      console.log(...cd)
+      // const ab = {a:1,b:2}
+      // const cd = {c:3,d:4}
+      // console.log({...ab,...cd})
+      // console.log(...cd)
+      //
+      // const promise = new Promise(function (resolve, reject) {
+      //   setTimeout(()=>{
+      //     console.log(666)
+      //   },0)
+      //   const a = 1;
+      //   reject(a);
+      //   resolve(123)
+      //
+      // })
+      // promise.then((value)=>{console.log(value)},(err)=>{console.log(err)})
+      // console.log(777)
+
+      // function jsonpProcess (data) {
+      //   console.log(data)
+      // }
+
+      // function jsonp_Script () {
+      //   var _script = document.createElement("script");
+      //   _script.type = "text/javascript";
+      //   _script.src = "https://tower.im/teams/137393/projects/357?conn_guid=673c88e3-9744-4bb1-bd70-96629f1423b4&pjax=1&callback=jsonpProcess";
+      //   // _script.src = "https://www.baidu.com";
+      //   document.head.appendChild(_script)
+      // }
+
+      // jsonp_Script();
+
+function req_test () {
+	var url = "https://tower.im/teams/137393/projects/357?conn_guid=673c88e3-9744-4bb1-bd70-96629f1423b4&pjax=1"
+ 
+	$.getJSON(url,{},function(data){console.log(data)});
+}
+req_test();
+      console.log($('#root'))
     </script>
   </body>
 </html>
